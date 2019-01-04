@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/test.css">
+
+	<script async defer src="js/slideShow.js"></script>
+
+	<meta charset="UTF-8">
+	<title>Ädla Ting</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
+</head>
+<body onload="showSlides(1)">
+
+<!-- Menu -->
+<div class="topnav">
+	<ul class="nav">
+		<li><a href="/about">Om Ädla Ting</a></li>
+		<li><a href="/images/">Bilder</a></li>
+		<li><a href="/start/">Start</a></li>
+		<li><a href="/contact/">Historik</a></li>
+		<li><a href="/aktuellt/">Aktuella produkter</a></li>
+	</ul>
+</div>
+<section id="section_1">
+	<div id="slideshow">
+		<!-- Full-width images with caption text -->
+		<div class="slide fade">
+			<img class="slideImg" src="images/kanna_rund_gron.jpg">
+		</div>
+		<div class="slide fade">
+			<img class="slideImg" src="images/ask_vit_rund_liten_stor.jpg">
+		</div>
+		<div class="slide fade">
+			<img class="slideImg" src="images/kanna_ros_rod.jpg">
+		</div>
+		<!-- NExt and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)"> &#10095;</a>
+	</div>
+</section>
+
+
+
+</body>
+</html>

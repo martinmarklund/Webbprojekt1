@@ -1,0 +1,150 @@
+html {
+	box-sizing: border-box;
+}
+
+.topnav{
+	display: block;
+	background: rgba(0, 0, 0, 1);
+	height: 5vw;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 12;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+
+.topnav a.active {
+	background-color: #54247D;
+	color: white;
+}
+
+.nav{
+	list-style: none;
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-size: 1.5vw;
+	box-sizing: border-box;
+}
+.nav li{
+	display:inline;
+}
+.nav a{
+	color: #f2f2f2;
+	display:inline-block;
+	padding: 1.65vw;
+	text-decoration: none;
+}
+
+.nav a:active{
+	background-color: #54247D;
+	color: #ddd;
+}
+
+.nav a:hover {
+	-webkit-transition: background .3s ease-in;
+	-moz-transition: 	background .3s ease-in;
+	-o-transition: 		background .3s ease-in;
+	transition: 		background .3s ease-in;
+}
+
+
+/*********** Slideshow/Section 1 ***********/
+#section_1 {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+/* Slideshow container */
+#slideshow {
+	max-height: 100%;
+	position: relative;
+}
+
+/* Hide the images by default since script will take care of that */
+.slide {
+	max-height: inherit;
+	display: none;
+}
+
+/* Center the image */
+.slideImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vw;
+}
+
+/* Next and previous buttons */
+.prev, .next {
+	curson: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	-webkit-transition: .6s ease;
+	-moz-transition: 	.6s ease;
+	-o-transition:		.6s ease;
+	transition: 		.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.prev:hover, .next:hover {
+	color: #ddd;
+	background-color:  rgba(84,36,125,0.8);
+}
+
+/* Position the 'next' button to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+
+/************ Small devices ************/
+@media only screen and (max-width: 400px) {
+	topnav{
+		background: rgba(0, 0, 0, 1);
+		height: 10vw;
+		position: relative;
+		width: 100%;
+		z-index: 12;
+		box-sizing: border-box;
+	}
+	nav{
+		list-style:none;
+		margin:0;
+		padding:0;
+		text-align:center;
+		font-size: 3.5vw;
+	}
+}
